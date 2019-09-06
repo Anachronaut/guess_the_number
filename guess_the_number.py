@@ -9,7 +9,7 @@ counter=0
 
 def configure_range():
     '''Set the high and low values for the random number'''
-    return 1, 10
+    return 1, 30
 
 
 def generate_secret(low, high):
