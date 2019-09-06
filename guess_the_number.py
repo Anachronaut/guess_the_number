@@ -5,6 +5,8 @@ too_low = 'too low'
 too_high = 'too high'
 
 
+# test
+
 def configure_range():
     '''Set the high and low values for the random number'''
     return 1, 10
