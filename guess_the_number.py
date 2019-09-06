@@ -31,11 +31,11 @@ def check_guess(guess, secret):
     counter += 1
     '''compare guess and secret, return string describing result of comparison'''
     if guess == secret:
-        return correct
+        return correct.upper()
     if guess < secret:
-        return too_low
+        return too_low.upper()
     if guess > secret:
-        return too_high
+        return too_high.upper()
 
 
 def main():
@@ -49,6 +49,7 @@ def main():
         print(result)
 
         if result == correct:
+
             print("you needed this many guesses", counter)
             break
 
