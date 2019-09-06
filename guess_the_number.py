@@ -49,7 +49,8 @@ def main():
         print(result)
 
         if result == correct:
-            print("you needed", counter,"many guesses")
+
+            print("you needed this many guesses", counter)
             break
 
 
