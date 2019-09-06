@@ -4,6 +4,8 @@ correct = 'you guessed correctly!'
 too_low = 'too low'
 too_high = 'too high'
 
+counter=0
+
 
 def configure_range():
     '''Set the high and low values for the random number'''
@@ -25,6 +27,8 @@ def get_guess():
 
 
 def check_guess(guess, secret):
+    global counter
+    counter += 1
     '''compare guess and secret, return string describing result of comparison'''
     if guess == secret:
         return correct
@@ -45,7 +49,9 @@ def main():
         print(result)
 
         if result == correct:
+            print("you needed this many guesses", counter)
             break
+
 
 
 if __name__ == '__main__':
